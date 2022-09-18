@@ -23,6 +23,12 @@
             echo "<td>".$filme['nome']."</td>";
             echo "<td>".$filme['resumo']."</td>";
             echo "<td>".$filme['ano']."</td>";
+            echo "
+              <td>
+                <a class=\"btn btn-info\"href=\"?pagina=filmes_editar&codigo=".$filme['codigo']."\">Editar</a>
+                <br>
+                <a class=\"btn btn-danger\" href=\"?pagina=filmes_deletar&codigo=".$filme['codigo']."\">deletar</a>
+            ";
             echo "</tr>";
            }
         ?>
